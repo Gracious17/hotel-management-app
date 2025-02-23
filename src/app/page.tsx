@@ -6,6 +6,7 @@ import { redirect } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Cards from "../components/Cards";
 import CustomerCare from "@/components/CustomerCare";
+import CountryDropdown from "@/components/Dropdown";
 const page = async () => {
   const session = await auth();
   if (!session) redirect("/sign-in");
@@ -23,6 +24,7 @@ const page = async () => {
       <Hero />
       <Cards />
       <CustomerCare />
+      <CountryDropdown />
     </div>
   );
 };
