@@ -47,13 +47,13 @@ const Hero = () => {
             </DropdownMenuTrigger>
 
             {item === "Hotels" && (
-              <DropdownMenuContent className="w-[80vw] bg-gray-200 p-4 rounded-lg shadow-md">
+              <DropdownMenuContent className=" flex w-40% bg-gray-200 p-4 rounded-lg shadow-md">
                 <h4 className="text-lg font-semibold">
                   Where do you want to stay?
                 </h4>
 
                 {/* Search Destination Input */}
-                <div className="mt-2">
+                <div className="mt-2 flex-col">
                   <Input placeholder="Search Destination" />
                 </div>
 
